@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { AlbumLengthComponent } from './album-length/album-length.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { MaterialModule } from './material/material.module';
+import { AlbumLengthService } from './album-length/album-length.service';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,9 @@ import { MaterialModule } from './material/material.module';
     AppRoutingModule,
     MaterialModule
   ],
-  providers: [],
+  providers: [
+      AlbumLengthService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
